@@ -8,7 +8,7 @@
 
 # Basic Site Settings
 locale                   : "en-US"
-title                    : "Tagore Zhao's Website"
+title                    : "Tagore(Songlin) Zhao's Website"
 title_separator          : "-"
 name                     : &name "Tagore(Songlin) Zhao"
 description              : &description "personal description"
@@ -22,9 +22,10 @@ repository               : "academicpages/academicpages.github.io"
 author:
   # Biographic information
   avatar           : "profile.png"
-  name             : "Tagore Zhao"
+  name             : "Tagore(Songlin) Zhao"
   pronouns         : "he/him"  
-  bio              : "Hi! This is Tagore Zhao. I am a undergraduate student at UC Berkeley. My research interests include LLM Interprebility and Compression, Computational and Mathematical Biology, and Algebra. I am currently looking for RA opportunities in the field of Machine Learning and Computational Biology. Please feel free to contact me if you have any questions or opportunities."
+  bio              : "Hi! This is Tagore Zhao. I am a undergraduate student at UC Berkeley. My research interests include efficient LLM and Interprebility, Mathematical Biology, and Algebra. 
+  I am currently looking for RA opportunities in the field of Machine Learning and Computational Biology. Please feel free to contact me if you have any questions or opportunities."
   location         : "Berkeley, CA"
   employer         : "University of California, Berkeley"
   # uri              : # URL
