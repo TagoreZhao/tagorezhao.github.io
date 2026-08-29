@@ -8,13 +8,13 @@
 
 # Basic Site Settings
 locale                   : "en-US"
-title                    : "Tagore(Songlin) Zhao's Website"
+title                    : "Songlin Zhao"
 title_separator          : "-"
-name                     : &name "Tagore(Songlin) Zhao"
-description              : &description "personal description"
+name                     : &name "Songlin Zhao"
+description              : &description "Songlin Zhao's academic website: research, publications, software, and CV."
 url                      : https://tagorezhao.github.io # the base hostname & protocol for your site e.g. "https://[your GitHub username].github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
-repository               : "academicpages/academicpages.github.io"
+repository               : "TagoreZhao/tagorezhao.github.io"
 
 # Site Author - The following control what appear as part of the author content on the side bar.
 #               If a field is blank the icon and link will not appear, otherwise it will be shown.
@@ -22,20 +22,18 @@ repository               : "academicpages/academicpages.github.io"
 author:
   # Biographic information
   avatar           : "profile.png"
-  name             : "Tagore(Songlin) Zhao"
-  pronouns         : "he/him"  
-  bio              : "Hi! This is Tagore Zhao. I am a undergraduate student at UC Berkeley. My research interests include efficient LLM and Interprebility, Mathematical Biology, and Algebra. 
-  I am currently looking for RA opportunities in the field of Machine Learning and Computational Biology. Please feel free to contact me if you have any questions or opportunities."
-  location         : "Berkeley, CA"
-  employer         : "University of California, Berkeley"
+  name             : "Songlin Zhao"
+  pronouns         : "he/him"
+  bio              : "Researcher interested in efficient machine learning and randomized linear algebra."
+  employer         : "University of Illinois Urbana-Champaign"
   # uri              : # URL
   email            : "tagorezhao at berkeley dot edu" 
 
   # Academic websites
   # arxiv            : # URL - Update with the correct link to your profile
-  # googlescholar    : # URL - Update with the correct link to your profile
+  googlescholar    : "https://scholar.google.com/citations?user=wcOlMykAAAAJ&hl=en"
   # impactstory      : # URL
-  # orcid            : # URL
+  orcid            : "https://orcid.org/0009-0003-2824-9115"
   # semantic         : # URL
   # pubmed           : # URL
   # researchgate     : # URL
@@ -74,15 +72,6 @@ author:
   # xing             : # Username
   # youtube          : # Username
   # zhihu            : # Username
-
-# Publication Category - The following the list of publication categories and their headings
-publication_category:
-  books:
-    title: 'Books'
-  manuscripts:
-    title: 'Journal Articles'    
-  conferences:
-    title: 'Conference Papers'
 
 # Site Settings
 teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
@@ -140,9 +129,12 @@ og_image                 :  # Open Graph/Twitter default site image
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
 social:
-  type                   : # Person or Organization (defaults to Person)
-  name                   : # If the user or organization name differs from the site's name
-  links: # An array of links to social media profiles
+  type                   : Person
+  name                   : "Songlin Zhao"
+  links:
+    - "https://scholar.google.com/citations?user=wcOlMykAAAAJ&hl=en"
+    - "https://github.com/TagoreZhao"
+    - "https://orcid.org/0009-0003-2824-9115"
 
 
 # Analytics
@@ -156,7 +148,6 @@ analytics:
 include:
   - .htaccess
   - _pages
-  - files
 exclude:
   - "*.sublime-project"
   - "*.sublime-workspace"
@@ -169,6 +160,7 @@ exclude:
   - assets/js/plugins
   - assets/js/vendor
   - CHANGELOG
+  - CONTRIBUTING.md
   - Capfile
   - config
   - Dockerfile
@@ -176,13 +168,33 @@ exclude:
   - Gruntfile.js
   - gulpfile.js
   - LICENSE
+  - files
+  - images/3953273590_704e3899d5_m.jpg
+  - images/500x300.png
+  - images/bio-photo-2.jpg
+  - images/bio-photo.jpg
+  - images/editing-talk.png
+  - images/foo-bar-identity-th.jpg
+  - images/foo-bar-identity.jpg
+  - images/homepage.png
+  - images/image-alignment-1200x4002.jpg
+  - images/image-alignment-150x150.jpg
+  - images/image-alignment-300x200.jpg
+  - images/image-alignment-580x300.jpg
+  - images/paragraph-indent.png
+  - images/paragraph-no-indent.png
+  - images/site-logo.png
   - local
   - log
+  - markdown_generator
   - node_modules
   - package.json*
   - Rakefile
   - README
   - tmp
+  - talkmap
+  - talkmap.ipynb
+  - talkmap.py
   - vendor
 keep_files:
   - .git
@@ -213,16 +225,7 @@ kramdown:
 
 # These settings control the types of collections used by the template
 collections:
-  teaching:
-    output: true
-    permalink: /:collection/:path/
   publications:
-    output: true
-    permalink: /:collection/:path/
-  portfolio:
-    output: true
-    permalink: /:collection/:path/
-  talks:
     output: true
     permalink: /:collection/:path/
 
@@ -247,15 +250,6 @@ defaults:
     values:
       layout: single
       author_profile: true
-  # _teaching
-  - scope:
-      path: ""
-      type: teaching
-    values:
-      layout: single
-      author_profile: true
-      share: true
-      comments: true
   # _publications
   - scope:
       path: ""
@@ -265,23 +259,6 @@ defaults:
       author_profile: true
       share: true
       comments: true
-  # _portfolio
-  - scope:
-      path: ""
-      type: portfolio
-    values:
-      layout: single
-      author_profile: true
-      share: true
-      comment: true
-  # _talks
-  - scope:
-      path: ""
-      type: talks
-    values:
-      layout: talk
-      author_profile: true
-      share: true
 
 
 # Sass/SCSS
