@@ -1,8 +1,5 @@
 # Primary navigation for the public site.
 main:
-  - title: "Home"
-    url: /
-
   - title: "Publications"
     url: /publications/
 

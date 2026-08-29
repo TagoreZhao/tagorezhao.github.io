@@ -6,5 +6,3 @@ author_profile: true
 redirect_from:
   - /resume
 ---
-
-CV PDF coming soon.

@@ -1,0 +1,17 @@
+{% include base_path %}
+{% assign publication = include.publication %}
+<article class="publication-entry" itemscope itemtype="https://schema.org/ScholarlyArticle">
+  <h3 class="publication-entry__title" itemprop="headline">
+    <a href="{{ base_path }}{{ publication.url }}">{{ publication.title }}</a>
+  </h3>
+  <p class="publication-entry__authors" itemprop="author">{{ publication.authors }}</p>
+  <p class="publication-entry__venue"><i>{{ publication.venue }}</i>, {{ publication.date | date: "%Y" }}</p>
+  {% if publication.note %}<p class="publication-entry__note">{{ publication.note }}</p>{% endif %}
+  {% include publication-links.html publication=publication %}
+  {% if publication.abstract %}
+    <details class="publication-abstract">
+      <summary class="btn btn--small btn--inverse">Abstract</summary>
+      <div class="publication-abstract__content" itemprop="abstract">{{ publication.abstract | markdownify }}</div>
+    </details>
+  {% endif %}
+</article>

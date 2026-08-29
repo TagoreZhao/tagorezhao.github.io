@@ -24,7 +24,7 @@ author:
   avatar           : "profile.png"
   name             : "Songlin Zhao"
   pronouns         : "he/him"
-  bio              : "Researcher interested in efficient machine learning and randomized linear algebra."
+  bio              : "Broadly interested in machine learning, applied mathematics, and scientific computing."
   employer         : "University of Illinois Urbana-Champaign"
   # uri              : # URL
   email            : "tagorezhao at berkeley dot edu" 
@@ -72,6 +72,15 @@ author:
   # xing             : # Username
   # youtube          : # Username
   # zhihu            : # Username
+
+# Publication categories are rendered only when they contain entries.
+publication_category:
+  preprints:
+    title: "Preprints"
+  conferences:
+    title: "Conference Papers"
+  journals:
+    title: "Journal Articles"
 
 # Site Settings
 teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"

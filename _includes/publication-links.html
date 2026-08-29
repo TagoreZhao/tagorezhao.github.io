@@ -1,0 +1,10 @@
+{% assign publication = include.publication %}
+{% if publication.paperurl or publication.pdfurl or publication.posterurl or publication.venueurl or publication.codeurl %}
+  <div class="publication-links{% if include.compact %} publication-links--compact{% endif %}">
+    {% if publication.paperurl %}<a class="btn btn--small" href="{{ publication.paperurl }}">Preprint</a>{% endif %}
+    {% if publication.pdfurl %}<a class="btn btn--small" href="{{ publication.pdfurl }}">PDF</a>{% endif %}
+    {% if publication.posterurl %}<a class="btn btn--small" href="{{ publication.posterurl }}">Poster</a>{% endif %}
+    {% if publication.venueurl %}<a class="btn btn--small" href="{{ publication.venueurl }}">Venue</a>{% endif %}
+    {% if publication.codeurl %}<a class="btn btn--small" href="{{ publication.codeurl }}">Code</a>{% endif %}
+  </div>
+{% endif %}
