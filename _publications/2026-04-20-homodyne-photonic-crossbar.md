@@ -12,7 +12,7 @@ abstract: >-
 excerpt: >-
   Large-scale homodyne photonic crossbar technology for high-throughput tensor processing.
 note: >-
-  Presented in the <a href="https://hc2026.hotchips.org/#posters">HOT CHIPS 2026 poster session</a> by OptiCore.
+  Presented in the <a href="https://hc2026.hotchips.org/#posters">HOT CHIPS 2026 poster session</a> by Opticore.
 paperurl: "https://arxiv.org/abs/2604.18496"
 pdfurl: "https://arxiv.org/pdf/2604.18496"
 posterurl: "https://hc2026.hotchips.org/#posters"

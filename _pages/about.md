@@ -9,9 +9,9 @@ redirect_from:
 
 {% include base_path %}
 
-I am Songlin Zhao, currently affiliated with the University of Illinois Urbana-Champaign. Before joining UIUC, I studied mathematics and statistics at the University of California, Berkeley.
+I am a first-year Ph.D. student in the Department of Statistics at the University of Illinois Urbana-Champaign. I earned two Bachelor of Arts degrees, in Mathematics and Statistics, from the University of California, Berkeley.
 
-I am broadly interested in machine learning, applied mathematics, and scientific computing. My recent work spans efficient large language models, randomized linear algebra, photonic computing, trustworthy AI, and computational biology. As I begin at UIUC, I am exploring new research directions and welcome research opportunities and collaborations across these areas.
+My research interests include machine learning, applied mathematics, and scientific computing. My recent work spans efficient large language models, randomized linear algebra, and photonic computing. At UIUC, I am exploring new research directions and welcome research opportunities and collaborations in these areas.
 
 ## Recent Works
 

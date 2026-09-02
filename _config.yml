@@ -21,13 +21,13 @@ repository               : "TagoreZhao/tagorezhao.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile.png"
+  avatar           : "songlin-profile.jpg"
   name             : "Songlin Zhao"
   pronouns         : "he/him"
   bio              : "Broadly interested in machine learning, applied mathematics, and scientific computing."
-  employer         : "University of Illinois Urbana-Champaign"
+  employer         : "Department of Statistics, University of Illinois Urbana-Champaign"
   # uri              : # URL
-  email            : "tagorezhao at berkeley dot edu" 
+  email            : "sz107 at illinois dot edu"
 
   # Academic websites
   # arxiv            : # URL - Update with the correct link to your profile
