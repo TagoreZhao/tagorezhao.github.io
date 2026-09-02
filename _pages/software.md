@@ -5,7 +5,7 @@ permalink: /software/
 author_profile: true
 ---
 
-Selected public software projects to which I contributed during internships.
+Selected public software projects to which I contributed.
 
 ## Opticore Inference Explorer
 
