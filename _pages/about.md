@@ -9,7 +9,7 @@ redirect_from:
 
 {% include base_path %}
 
-I am a first-year Ph.D. student in the Department of Statistics at the University of Illinois Urbana-Champaign. I earned a B.A. in Mathematics and a B.A. in Statistics from the University of California, Berkeley.
+I am a first-year Ph.D. student in the Department of Statistics at the University of Illinois Urbana-Champaign. I earned a B.A. in Mathematics and a B.A. in Statistics from the University of California, Berkeley, after spending my freshman and sophomore years at the University of California, Santa Barbara.
 
 My research interests include machine learning, applied mathematics, and scientific computing. My recent work spans efficient large language models, randomized linear algebra, and photonic computing. At UIUC, I am exploring new research directions and welcome research opportunities and collaborations in these areas.
 
