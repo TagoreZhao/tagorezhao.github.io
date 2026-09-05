@@ -10,6 +10,7 @@ author_profile: true
 ### [STAT 385: Statistics Programming Methods](https://courses.illinois.edu/schedule/2026/fall/STAT/385)
 
 Department of Statistics, University of Illinois Urbana-Champaign  
+**Instructor:** [Matthew Singh](https://conelab.beckman.illinois.edu/)<br>
 **Role:** Teaching Assistant
 
 **Teaching Assistant:** Songlin Zhao  
