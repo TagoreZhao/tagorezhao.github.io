@@ -1,77 +1,44 @@
-# Academic Pages
-**Academic Pages is a Github Pages template for academic websites.**
+# Songlin Zhao's Academic Website
 
-![Academic Pages template example](images/homepage.png "Academic Pages template example")
+This repository contains the source for [Songlin Zhao's personal academic website](https://tagorezhao.github.io/). It presents my research, publications, software projects, and academic background as a Ph.D. student in Statistics at the University of Illinois Urbana-Champaign.
 
-# Getting Started
+The site is built with [Jekyll](https://jekyllrb.com/) and hosted on [GitHub Pages](https://pages.github.com/).
 
-1. Register a GitHub account if you don't have one and confirm your e-mail (required!)
-1. Click the "Use this template" button in the top right.
-1. On the "New repository" page, enter your repository name as "[your GitHub username].github.io", which will also be your website's URL.
-1. Set site-wide configuration and add your content.
-1. Upload any files (like PDFs, .zip files, etc.) to the `files/` directory. They will appear at https://[your GitHub username].github.io/files/example.pdf.
-1. Check status by going to the repository settings, in the "GitHub pages" section
-1. (Optional) Use the Jupyter notebooks or python scripts in the `markdown_generator` folder to generate markdown files for publications and talks from a TSV file.
+## Acknowledgments and attribution
 
-See more info at https://academicpages.github.io/
+This website is adapted from [Academic Pages](https://github.com/academicpages/academicpages.github.io), a GitHub Pages template for academic websites. Academic Pages was created by [Stuart Geiger](https://github.com/staeiou) as a fork of the [Minimal Mistakes Jekyll theme](https://github.com/mmistakes/minimal-mistakes) by [Michael Rose](https://github.com/mmistakes), and is maintained by [Robert Zupko](https://github.com/rjzupkoii) and the Academic Pages contributors.
 
-## Running locally
+The content, publication displays, navigation, and styling have been customized for my personal academic website. Thanks to the Academic Pages and Minimal Mistakes contributors for the foundation.
 
-When you are initially working your website, it is very useful to be able to preview the changes locally before pushing them to GitHub. To work locally you will need to:
+The original theme's MIT license and copyright notice are preserved in [LICENSE](LICENSE). Upstream template documentation is available at [academicpages.github.io](https://academicpages.github.io/).
 
-1. Clone the repository and made updates as detailed above.
-1. Make sure you have ruby-dev, bundler, and nodejs installed
-    
-    On most Linux distribution and [Windows Subsystem Linux](https://learn.microsoft.com/en-us/windows/wsl/about) the command is:
-    ```bash
-    sudo apt install ruby-dev ruby-bundler nodejs
-    ```
-    On MacOS the commands are:
-    ```bash
-    brew install ruby
-    brew install node
-    gem install bundler
-    ```
-1. Run `bundle install` to install ruby dependencies. If you get errors, delete Gemfile.lock and try again.
-1. Run `jekyll serve -l -H localhost` to generate the HTML and serve it from `localhost:4000` the local server will automatically rebuild and refresh the pages on change.
+## Updating the site
 
-If you are running on Linux it may be necessary to install some additional dependencies prior to being able to run locally: `sudo apt install build-essential gcc make`
+- `_config.yml`: site settings, profile information, and publication categories.
+- `_pages/`: homepage, Publications, Teaching, Software, and CV pages.
+- `_publications/`: paper metadata, abstracts, and links. Publications and Recent Works share these records and the `_includes/publication-entry.html` template.
+- `_includes/` and `_layouts/`: shared page components and layouts.
+- `_sass/` and `assets/`: styling, scripts, and other site assets.
+- `images/` and `files/`: images and downloadable files.
 
-## Using Docker
+Pushing changes to the `master` branch triggers the GitHub Pages build and deployment. Check the repository's [Actions page](https://github.com/TagoreZhao/tagorezhao.github.io/actions) for deployment status.
 
-Working from a different OS, or just want to avoid installing dependencies? You can use the provided `Dockerfile` to build a container that will run the site for you if you have [Docker](https://www.docker.com/) installed.
+## Local preview
 
-Start by build the container:
+With Ruby, Bundler, and Node.js installed, run these commands from the repository root:
 
 ```bash
-docker build -t jekyll-site .
+bundle install
+bundle exec jekyll serve --livereload --host 127.0.0.1
 ```
 
-Next, run the container:
+Open <http://127.0.0.1:4000>. Restart the server after changing `_config.yml`.
+
+Alternatively, use the included Dockerfile:
+
 ```bash
-docker run -p 4000:4000 --rm -v $(pwd):/usr/src/app jekyll-site
+docker build -t songlin-academic-site .
+docker run --rm -p 4000:4000 -v "$(pwd):/usr/src/app" songlin-academic-site
 ```
 
-# Maintenance
-
-Bug reports and feature requests to the template should be [submitted via GitHub](https://github.com/academicpages/academicpages.github.io/issues/new/choose). For questions concerning how to style the template, please feel free to start a [new discussion on GitHub](https://github.com/academicpages/academicpages.github.io/discussions).
-
-This repository was forked (then detached) by [Stuart Geiger](https://github.com/staeiou) from the [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/), which is © 2016 Michael Rose and released under the MIT License (see LICENSE.md). It is currently being maintained by [Robert Zupko](https://github.com/rjzupkoii) and additional maintainers would be welcomed.
-
-## Bugfixes and enhancements
-
-If you have bugfixes and enhancements that you would like to submit as a pull request, you will need to [fork](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/fork-a-repo) this repository as opposed to using it as a template. This will also allow you to [synchronize your copy](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/syncing-a-fork) of template to your fork as well.
-
-Unfortunately, one logistical issue with a template theme like Academic Pages that makes it a little tricky to get bug fixes and updates to the core theme. If you use this template and customize it, you will probably get merge conflicts if you attempt to synchronize. If you want to save your various .yml configuration files and markdown files, you can delete the repository and fork it again. Or you can manually patch.
-
----
-<div align="center">
-    
-![pages-build-deployment](https://github.com/academicpages/academicpages.github.io/actions/workflows/pages/pages-build-deployment/badge.svg)
-[![GitHub contributors](https://img.shields.io/github/contributors/academicpages/academicpages.github.io.svg)](https://github.com/academicpages/academicpages.github.io/graphs/contributors)
-[![GitHub release](https://img.shields.io/github/v/release/academicpages/academicpages.github.io)](https://github.com/academicpages/academicpages.github.io/releases/latest)
-[![GitHub license](https://img.shields.io/github/license/academicpages/academicpages.github.io?color=blue)](https://github.com/academicpages/academicpages.github.io/blob/master/LICENSE)
-
-[![GitHub stars](https://img.shields.io/github/stars/academicpages/academicpages.github.io)](https://github.com/academicpages/academicpages.github.io)
-[![GitHub forks](https://img.shields.io/github/forks/academicpages/academicpages.github.io)](https://github.com/academicpages/academicpages.github.io/fork)
-</div>
+Open <http://localhost:4000> to preview the site.
