@@ -79,6 +79,8 @@ publication_category:
     title: "Preprints"
   conferences:
     title: "Conference Papers"
+  workshops:
+    title: "Workshop Papers"
   journals:
     title: "Journal Articles"
 

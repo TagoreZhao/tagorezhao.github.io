@@ -1,10 +1,10 @@
 ---
 title: "EfficientXpert: Efficient Domain Adaptation for Large Language Models via Propagation-Aware Pruning"
 collection: publications
-category: preprints
+category: workshops
 permalink: /publication/efficientxpert
-date: 2025-11-25
-venue: "arXiv preprint arXiv:2511.19935"
+date: 2026-10-03
+venue: "Accepted at NeurIPS 2026 Workshop — On-Device Intelligence: Foundation Models under Real-World Constraints"
 authors: >-
   <strong>Songlin Zhao</strong>, Michael Pitts, and Zhuwei Qin
 abstract: >-
@@ -13,4 +13,6 @@ excerpt: >-
   A lightweight domain-adaptation framework combining propagation-aware pruning with efficient closed-form updates for low-rank adapters.
 paperurl: "https://arxiv.org/abs/2511.19935"
 pdfurl: "https://arxiv.org/pdf/2511.19935"
+venueurl: "https://odi2026.github.io/"
+codeurl: "https://github.com/TagoreZhao/Efficient_Domain_Adaptation"
 ---
