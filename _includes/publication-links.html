@@ -1,10 +1,12 @@
 {% assign publication = include.publication %}
-{% if publication.paperurl or publication.pdfurl or publication.posterurl or publication.venueurl or publication.codeurl %}
+{% if publication.paperurl or publication.pdfurl or publication.posterurl or publication.venueurl or publication.codeurl or publication.projecturl or publication.dataseturl %}
   <div class="publication-links{% if include.compact %} publication-links--compact{% endif %}">
     {% if publication.paperurl %}<a class="btn btn--small" href="{{ publication.paperurl }}">Preprint</a>{% endif %}
     {% if publication.pdfurl %}<a class="btn btn--small" href="{{ publication.pdfurl }}">PDF</a>{% endif %}
     {% if publication.posterurl %}<a class="btn btn--small" href="{{ publication.posterurl }}">Poster</a>{% endif %}
     {% if publication.venueurl %}<a class="btn btn--small" href="{{ publication.venueurl }}">Venue</a>{% endif %}
     {% if publication.codeurl %}<a class="btn btn--small" href="{{ publication.codeurl }}">Code</a>{% endif %}
+    {% if publication.projecturl %}<a class="btn btn--small" href="{{ publication.projecturl }}">Project Page</a>{% endif %}
+    {% if publication.dataseturl %}<a class="btn btn--small" href="{{ publication.dataseturl }}">Dataset</a>{% endif %}
   </div>
 {% endif %}

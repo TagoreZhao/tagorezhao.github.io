@@ -18,11 +18,7 @@ My research interests include efficient machine learning, numerical methods, and
 {% assign recent_works = site.publications | sort: "date" | reverse %}
 <div class="recent-works">
 {% for post in recent_works limit: 4 %}
-  <article class="recent-work">
-    <h3><a href="{{ base_path }}{{ post.url }}">{{ post.title }}</a></h3>
-    <p class="recent-work__meta"><i>{{ post.venue }}</i>, {{ post.date | date: "%Y" }}</p>
-    {% include publication-links.html publication=post compact=true %}
-  </article>
+  {% include publication-entry.html publication=post compact=true %}
 {% endfor %}
 </div>
 
